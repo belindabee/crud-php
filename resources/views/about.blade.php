@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <h1>
-        Hello!! {{ $name }}
+        About {{ $name }}
         <small>Sekarang anda berada di TA {{$TA}}</small>
     </h1>
 </body>

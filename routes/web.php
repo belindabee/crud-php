@@ -17,6 +17,10 @@
 // });
 
 Route::get('/', function () {
-    return view('welcome')->with('name', 'Bianca Belinda Muhamad!!');
-});  
+    return view('welcome',['name' =>'Bianca Belinda Muhamad']);
+}); 
+
+Route::get('/about', function () {
+    return view('about',['name' =>'Bianca Belinda Muhamad']);
+});
 
