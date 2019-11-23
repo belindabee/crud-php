@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>Hello!! {{ $name }}</h1>
+    <small>Sekarang anda berada di TA {{$TA}}</small>
 </body>
 </html>

@@ -18,4 +18,5 @@
 
 Route::get('/', function () {
     return view('welcome')->with('name', 'Bianca Belinda Muhamad!!');
-});    
+});  
+
