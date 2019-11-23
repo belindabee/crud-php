@@ -10,7 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::group(['prefix'=>'admin','middleware'=>['web']],function(){
+//     Route::get('/',['uses' => 'HomeController@index','as' => 'home.index']);
+//     Route::get('/about',['uses' => 'HomeController@about','as' => 'home.about']);
+//     Route::get('/help',['uses' => 'HomeController@help','as' => 'home.help']);
+// });
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('welcome')->with('name', 'Bianca Belinda Muhamad!!');
+});    
