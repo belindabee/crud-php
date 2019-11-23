@@ -24,3 +24,5 @@ Route::get('/about', function () {
     return view('about',['name' =>'Bianca Belinda Muhamad']);
 });
 
+
+
