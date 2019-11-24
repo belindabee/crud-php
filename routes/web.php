@@ -24,5 +24,5 @@ Route::get('/about', function () {
     return view('about',['name' =>'Bianca Belinda Muhamad']);
 });
 
-
+Route::get('/profile',['uses' => 'UserController@profile', 'as' => 'user.show']);
 
