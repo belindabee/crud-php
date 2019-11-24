@@ -7,7 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Profile User</h1>
+    @extends('layout.masterpage')
+    @section('judul')
+    Profile User
+    @endsection 
+    @section('isihalaman')
+
     <table width="400" border="1">
         <tr>
             <td>Username</td>
@@ -18,5 +23,6 @@
             <td>{{$data['tanggal_login']}}</td>
         </tr>
     </table>
+    @endsection
 </body>
 </html>
