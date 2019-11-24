@@ -16,13 +16,17 @@
 //     Route::get('/help',['uses' => 'HomeController@help','as' => 'home.help']);
 // });
 
-Route::get('/', function () {
-    return view('welcome',['name' =>'Bianca Belinda Muhamad']);
-}); 
+// Route::get('/', function () {
+//     return view('welcome',['name' =>'Bianca Belinda Muhamad']);
+// }); 
 
-Route::get('/about', function () {
-    return view('about',['name' =>'Bianca Belinda Muhamad']);
-});
+// Route::get('/about', function () {
+//     return view('about',['name' =>'Bianca Belinda Muhamad']);
+// });
 
-Route::get('/profile',['uses' => 'UserController@profile', 'as' => 'user.show']);
+// Route::get('/profile',['uses' => 'UserController@profile', 'as' => 'user.show']);
+
+Route::resource('Customers', 'CustomerController',['parameters'=>['customer'=>'id']]);
+Route::resource('products', 'ProductsController',['parametes'=>['products'=>'id']]);
+Route::resource('order', 'OrderController',['parameters'=>['orders'=>'id']]);
 
